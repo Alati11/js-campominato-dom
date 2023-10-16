@@ -30,6 +30,9 @@
 .bg-green {
 	background-color: greenyellow;
 }
+.bg-red {
+	background-color: red;
+}
 
 .title { 
     display: flex;
