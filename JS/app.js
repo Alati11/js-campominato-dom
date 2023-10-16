@@ -30,6 +30,8 @@ playBtnElement.addEventListener('click', function () {
     const cellDomElements = document.querySelectorAll('.box');
     //console.log(cellDomElements);   
 
+  
+
     // ciclando l'array con le caselle del dom
     for (let i = 0; i < cellDomElements.length; i++) {
         const currentCellElement = cellDomElements[i];
@@ -40,9 +42,13 @@ playBtnElement.addEventListener('click', function () {
             currentCellElement.classList.add('bg-green');
             console.log(currentCellElement);
 
-            if(currentCellElement === )
-
-
+            if (bombsArray.includes(n) === true) {
+                currentCellElement.classList.add('bg-red');
+                console.log( "Hai perso!!!");
+                } else { currentCellElement = currentCellElement + i;
+            
+            
+                }
         })
     }
 })
@@ -64,14 +70,15 @@ function getArrayOfRandomIntBetween(minRange, maxRange, number) {
             bombsArray.push(n);
             console.log(bombsArray);
         }
-        
-
     }
 
     // titolo.addEventListener('click', onCellClick);
     // return array di numeri generati
     return bombsArray;
 }
+// controllare se il numero cliccato è presente nella lista dei numeri generati
+
+
 // paragrafo.addEventListener('click', onCellClick)    
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
