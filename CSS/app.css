@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 680px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -15,21 +15,22 @@
 
 .grid {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 .box {
 	aspect-ratio: 1;
-	border: 1px solid black;
+	border: 2px solid darkorange;
 	width: calc(100% / 10);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.bg-green {
-	background-color: greenyellow;
+.bg-blue{
+	background-color:deepskyblue;
 }
+
 .bg-red {
 	background-color: red;
 }
@@ -44,9 +45,10 @@
 }
 
 .button { 
-    font-size: 50px;
-    border-radius: 10%;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 15%;
     border-color: currentColor;
-    background-color: green;
+    background-color:darkorange;
 
 }
